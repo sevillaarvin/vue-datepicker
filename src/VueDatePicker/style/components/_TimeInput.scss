@@ -46,6 +46,13 @@
     background: var(--dp-hover-color);
     color: var(--dp-hover-text-color);
   }
+
+  &.hours,
+  &.minutes {
+    border: var(--dp-time-display-border, 0);
+    padding: var(--dp-time-display-padding, 0);
+    height: var(--dp-time-display-height, auto);
+  }
 }
 
 .dp__inc_dec_button {

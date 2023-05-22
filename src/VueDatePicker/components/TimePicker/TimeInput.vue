@@ -1,6 +1,6 @@
 <template>
     <div style="justify-content: space-between;" class="dp__time_input" v-if="!disabled">
-        <div v-for="(timeInput, i) in timeInputs" :key="i" :class="timeColClass">
+        <div v-for="(timeInput, i) in timeInputs" :key="i">
             <template v-if="timeInput.separator"> : </template>
             <template v-else>
                 <button
@@ -26,7 +26,7 @@
                     type="button"
                     :aria-label="defaults.ariaLabels?.openTpOverlay(timeInput.type)"
                     class="dp__btn"
-                    :class="checkOverlayDisabled(timeInput.type) ? '' : 'dp__time_display'"
+                    :class="{[timeInput.type]: true, dp__time_display: !checkOverlayDisabled(timeInput.type)}"
                     tabindex="0"
                     :data-test="`${timeInput.type}-toggle-overlay-btn`"
                     @keydown.enter="toggleOverlay(timeInput.type)"
