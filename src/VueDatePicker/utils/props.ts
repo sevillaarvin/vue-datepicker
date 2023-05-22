@@ -160,6 +160,7 @@ export const AllProps = {
     sixWeeks: { type: [Boolean, String] as PropType<boolean | SixWeekMode>, default: false },
     actionRow: { type: Object as PropType<Partial<ActionRowData>>, default: () => ({}) },
     allowPreventDefault: { type: Boolean as PropType<boolean>, default: false },
+    noArrows: { type: Boolean as PropType<boolean>, default: false },
 };
 
 export type AllPropsType = ExtractPropTypes<typeof AllProps>;

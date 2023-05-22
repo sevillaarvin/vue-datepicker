@@ -4,6 +4,7 @@
             <template v-if="timeInput.separator"> : </template>
             <template v-else>
                 <button
+                    v-if="!props.noArrows"
                     type="button"
                     :class="{
                         dp__btn: true,
@@ -42,6 +43,7 @@
                     <template v-if="!$slots[timeInput.type]">{{ timeValueDisplay(timeInput.type).text }}</template>
                 </button>
                 <button
+                    v-if="!props.noArrows"
                     type="button"
                     :class="{
                         dp__btn: true,
