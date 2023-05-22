@@ -28,6 +28,7 @@ export const slots = [
     { name: 'marker-tooltip', use: ['calendar'] },
     { name: 'action-extra', use: ['menu'] },
     { name: 'time-picker-overlay', use: ['calendar', 'time'] },
+    { name: 'time-picker-header', use: ['time'] },
     { name: 'am-pm-button', use: ['calendar', 'time'] },
     { name: 'left-sidebar', use: ['menu'] },
     { name: 'right-sidebar', use: ['menu'] },

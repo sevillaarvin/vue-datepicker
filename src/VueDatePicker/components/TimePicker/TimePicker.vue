@@ -31,6 +31,7 @@
                     ></slot>
                     <template v-if="!$slots['time-picker-overlay']">
                         <div class="dp__overlay_row dp__flex_row">
+                            <slot name="time-picker-header" v-if="$slots['time-picker-header']" />
                             <TimeInput
                                 v-for="(tInput, index) in timeInputs"
                                 :key="index"
