@@ -1,5 +1,5 @@
 <template>
-    <div class="dp__time_input" v-if="!disabled">
+    <div style="justify-content: space-between;" class="dp__time_input" v-if="!disabled">
         <div v-for="(timeInput, i) in timeInputs" :key="i" :class="timeColClass">
             <template v-if="timeInput.separator"> : </template>
             <template v-else>
