@@ -46,7 +46,7 @@
 }
 
 .dp__time_picker_overlay_container {
-  height: 100%;
+  height: var(--dp-time-picker-overlay-container-height, 100%);
 }
 
 .dp__overlay_row {
