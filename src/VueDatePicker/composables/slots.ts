@@ -32,6 +32,7 @@ export const slots = [
     { name: 'am-pm-button', use: ['calendar', 'time'] },
     { name: 'left-sidebar', use: ['menu'] },
     { name: 'right-sidebar', use: ['menu'] },
+    { name: 'top-sidebar', use: ['menu'] },
     { name: 'month-year', use: ['month-year'] },
     { name: 'time-picker', use: ['menu'] },
     { name: 'action-row', use: ['action'] },

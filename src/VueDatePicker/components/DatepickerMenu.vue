@@ -50,6 +50,7 @@
                 <div class="dp__instance_calendar" ref="calendarWrapperRef" role="document">
                     <div :class="menuCalendarClassWrapper">
                         <div v-for="(instance, i) in calendarAmm" :key="instance" :class="calendarInstanceClassWrapper">
+                            <slot name="top-sidebar" />
                             <MonthYearPicker
                                 :ref="
                                     (el: any) => {
